@@ -10,5 +10,5 @@ img_array = image.img_to_array(img) / 255.0
 img_array = np.expand_dims(img_array, axis=0)
 
 pred = model.predict(img_array)
-class_names = ["headphones", "keyboard", "mouse", "phones","books","Laptop","pens","water_bottles"]
+class_names = ["headphones", "keyboard", "mouse", "phone","book","laptop","pen","water_bottle"]
 print("Predicted Object: ", class_names[np.argmax(pred)])
